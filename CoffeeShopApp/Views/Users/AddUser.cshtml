@@ -3,8 +3,8 @@
     ViewBag.Title = "AddUser";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@model CoffeeShopApp.Models.UserInfo
 <h2>User Confirmation Page</h2>
 
-<h3>Hello @ViewBag.FirstName</h3> 
+<h1>Welcome @Model.LastName, @Model.FirstName! </h1>
 

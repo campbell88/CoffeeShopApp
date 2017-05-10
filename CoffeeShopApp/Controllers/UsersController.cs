@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CoffeeShopApp.Models;
 
 namespace CoffeeShopApp.Controllers
 {
@@ -14,11 +15,11 @@ namespace CoffeeShopApp.Controllers
            
             return View();
         }
-        public ActionResult AddUser(string firstName)
+        public ActionResult AddUser(UserInfo NewUser)
         {
             
-            ViewBag.FirstName = firstName;
-            return View();
+          
+            return View(NewUser);  //pass the NewUser model to the AddUser view
 
         }
     }
