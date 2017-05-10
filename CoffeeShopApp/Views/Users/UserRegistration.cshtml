@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "UserRegistration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>User Registration</h2>
+
+<h3>Fill the Form Below</h3>
+<form action="/Users/AddUser">
+    First Name:   <input type="text" name="firstName" required /><br />
+    Last Name:   <input type="text" name="lastName" required/><br />
+    Email Address:   <input type="email" name="emailAdd" required /><br />
+    Password:   <input type="password" name="password" required/><br />
+    <input type="submit" />
+
+</form>
